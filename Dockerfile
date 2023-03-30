@@ -4,9 +4,7 @@ ARG PROJECT_NAME
 ARG USER_NAME
 ENV TZ=Asia/Tokyo
 
-RUN corepack enable npm yarn
-
-RUN chown -R ${USER_NAME} /home
+# RUN corepack enable npm yarn
 
 USER ${USER_NAME}
 
